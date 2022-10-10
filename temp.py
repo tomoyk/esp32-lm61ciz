@@ -10,7 +10,7 @@ while True:
     print("pot_value", pot_value)
 
     # analog value between 0 and 4096 => voltage
-    vol = pot_value * 1.36 / 4096 + 0.01
+    vol = pot_value * 1.36 / 4096 - 0.01
     print("vol", vol)
 
     # voltage => temperature
