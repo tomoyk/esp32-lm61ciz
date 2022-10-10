@@ -3,7 +3,7 @@ from time import sleep
 
 adc_pin = Pin(34, mode=Pin.IN)
 pot = ADC(adc_pin)
-pot.atten(ADC.ATTN_2_5DB)  # (for 3.3V) 100mV - 1250mV
+pot.atten(ADC.ATTN_2_5DB)  # 100mV - 1250mV
 
 while True:
     pot_value = pot.read()
